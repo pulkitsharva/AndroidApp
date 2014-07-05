@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.firstapp.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="23dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editText1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Gender" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="62dp"
+            android:text="Enter Username" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView2"
+            android:ems="10"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="98dp"
+            android:layout_toRightOf="@+id/textView2"
+            android:text="Submit" />
+
+<!--         <Spinner -->
+<!--             android:id="@+id/button1" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignRight="@+id/spinner1" -->
+<!--             android:layout_below="@+id/spinner1" -->
+<!--             android:layout_toRightOf="@+id/textView1" /> -->
+
+    </RelativeLayout>
+
+</FrameLayout>
+
